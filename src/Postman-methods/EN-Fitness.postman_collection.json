@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "ec4646f4-3117-4587-a3fb-f5aadf749b5a",
+		"name": "EN-Fitness",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39175250"
+	},
+	"item": [
+		{
+			"name": "cadastrarAluno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"7856\",\r\n  \"nome\": \"João Silva\",\r\n  \"cpf\": \"123.456.789-00\",\r\n  \"email\": \"joao.silva@email.com\",\r\n  \"telefone\": \"81973659987\",\r\n  \"dataNascimento\": \"07-10-2002\",\r\n  \"dataCadastro\": \"10-05-2024\",\r\n  \"plano\": \"musculacao\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cadastrarAluno\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cadastrarAluno\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrarProfessor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"1698\",\r\n  \"nome\": \"José Carlos\",\r\n  \"cpf\": \"163.426.749-40\",\r\n  \"especialidade\": \"musculacao\",\r\n  \"email\": \"zecarlos25@email.com\",\r\n  \"telefone\": \"819766592987\",\r\n  \"salario\": \"2100\",\r\n  \"horariosDisponiveis\": {\r\n        \"terca-feira\":[\r\n            {\r\n                \"entrada\": \"09:00\",\r\n                \"saida\": \"12:45\"\r\n            },\r\n            {\r\n                \"entrada\": \"15:00\",\r\n                \"saida\": \"18:00\"\r\n            }\r\n        ],\r\n        \"quarta-feira\":[\r\n            {\r\n                \"entrada\": \"20:00\",\r\n                \"saida\": \"22:30\"\r\n            }\r\n        ]\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cadastrarProfessor\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cadastrarProfessor\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/cadastrarPagamento\n",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"7463256\",\r\n    \"valor\": \"85\",\r\n    \"dataPagamento\": \"10/10/20240\",\r\n    \"metodoPagamento\": \"especie\",\r\n    \"aluno\":{\r\n        \"id\": \"7856\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cadastrarPagamento\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cadastrarPagamento\n"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
